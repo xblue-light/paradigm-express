@@ -1,0 +1,134 @@
+extends layout
+
+block content
+  // Wrapper
+  #wrapper
+    // Intro
+    section.intro
+      header
+        h1= title
+        p
+          | A free responsive site template designed by #{title}
+          a(href='https://twitter.com/ajlkn') @ajlkn
+          |  / 
+          a(href='https://html5up.net') HTML5 UP
+        ul.actions
+          li
+            a.arrow.scrolly(href='#first')
+              span.label Next
+      .content
+        span.image.fill(data-position='center')
+          img(src='images/pic01.jpg', alt='')
+    // Section
+    section#first
+      header
+        h2 Magna sed nullam nisl adipiscing
+      .content
+        p
+          strong Lorem ipsum dolor
+          |  sit amet consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor amet fermentum. Nullam venenatis erat id vehicula ultrices sed ultricies condimentum. Magna sed etiam consequat, et lorem adipiscing sed nulla. Volutpat nisl et tempus et dolor libero, feugiat magna tempus, sed et lorem adipiscing.
+        span.image.main
+          img(src='images/pic02.jpg', alt='')
+    // Section
+    section
+      header
+        h2 Feugiat consequat tempus ultrices
+      .content
+        p
+          strong Etiam tristique libero
+          |  eu nibh porttitor amet fermentum. Nullam venenatis erat id vehicula ultrices sed ultricies condimentum.
+        ul.feature-icons
+          li.icon.fa-laptop Consequat tempus
+          li.icon.fa-bolt Etiam adipiscing
+          li.icon.fa-signal Libero nullam
+          li.icon.fa-gear Blandit condimentum
+          li.icon.fa-map-marker Lorem ipsum dolor
+          li.icon.fa-code Nibh amet venenatis
+        p
+          | Vehicula ultrices sed ultricies condimentum. Magna sed etiam consequat, et lorem adipiscing sed nulla. Volutpat nisl et tempus et dolor libero, feugiat magna tempus, sed et lorem adipiscing.
+    // Section
+    section
+      header
+        h2 Ultrices erat magna sed condimentum
+      .content
+        p
+          strong Integer mollis egestas
+          |  nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.
+        // Section
+        section
+          header
+            h3 Erat aliquam
+            p
+              | Vehicula ultrices dolor amet ultricies et condimentum. Magna sed etiam consequat, et lorem adipiscing sed dolor sit amet, consectetur amet do eiusmod tempor incididunt  ipsum suspendisse ultrices gravida.
+          .content
+            .gallery
+              a.landscape(href='/images/gallery/fulls/01.jpg')
+                img(src='images/gallery/thumbs/01.jpg', alt='')
+              a(href='/images/gallery/fulls/02.jpg')
+                img(src='images/gallery/thumbs/02.jpg', alt='')
+              a(href='/images/gallery/fulls/03.jpg')
+                img(src='images/gallery/thumbs/03.jpg', alt='')
+              a.landscape(href='/images/gallery/fulls/04.jpg')
+                img(src='images/gallery/thumbs/04.jpg', alt='')
+        // Section
+        section
+          header
+            h3 Nisl consequat
+            p
+              | Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam sed facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet mauris. Ut magna finibus nisi nec lacinia ipsum maximus.
+          .content
+            .gallery
+              a.landscape(href='/images/gallery/fulls/05.jpg')
+                img(src='images/gallery/thumbs/05.jpg', alt='')
+              a(href='/images/gallery/fulls/06.jpg')
+                img(src='images/gallery/thumbs/06.jpg', alt='')
+              a(href='/images/gallery/fulls/07.jpg')
+                img(src='images/gallery/thumbs/07.jpg', alt='')
+        // Section
+        section
+          header
+            h3 Lorem gravida
+            p
+              | Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aenean ornare velit lacus, ac varius sed enim lorem ullamcorper dolore.  ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis.
+          .content
+            .gallery
+              a.portrait(href='/images/gallery/fulls/08.jpg')
+                img(src='images/gallery/thumbs/08.jpg', alt='')
+              a.portrait(href='/images/gallery/fulls/09.jpg')
+                img(src='images/gallery/thumbs/09.jpg', alt='')
+              a.landscape(href='/images/gallery/fulls/10.jpg')
+                img(src='images/gallery/thumbs/10.jpg', alt='')
+    // Section
+    section
+      header
+        h2 Duis sed adpiscing veroeros amet
+      .content
+        p
+          strong Proin tempus feugiat
+          |  sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
+        ul.actions
+          li
+            a.button.primary.large(href='#') Get Started
+          li
+            a.button.large(href='#') Learn More
+    // Section
+    section
+      header
+        h2 Get in touch
+      .content
+        p
+          strong Auctor commodo
+          |  interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
+        form#mgform
+          .fields
+            .field.half
+              input#name(type='text', name='firstName', placeholder='Name')
+            .field.half
+              input#mail(type='email', name='email', placeholder='Enter email address..')
+            .field
+              textarea#message(name='formMessage', placeholder='Message', rows='7')
+          ul.actions
+            li
+              input.button.primary(type='submit', value='Send Message', id='btn-submit')
+          div.ajax-response
+      include includes/footer.pug
